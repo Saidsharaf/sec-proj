@@ -15,8 +15,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: 'Before'
+        run: ls
+        
       - uses: actions/checkout@v3
 
-      - name: 'show'
+      - name: 'After'
         run: ls
 
